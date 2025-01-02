@@ -1,0 +1,407 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* || RESET */
+ * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* || VARIABLES */
+:root {
+  --NAV-BG-COLOR: rgba(45, 88, 45, 0.74);
+  --GNRL-BG-COLOR: white;
+  --SCTN-BG-COLOR: #000000c4;
+  --COLOR: white;
+  --CNT-COLOR: rgba(168, 162, 162, 0.187);
+}
+
+/* || LIST SETTINGS */
+li {
+  list-style-type: none;
+  padding: 0.5rem;
+
+}
+
+li:hover {
+  color: red;
+  cursor: pointer;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* || HEADER */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  width: 100vw;
+}
+
+nav {
+  background-color: var(--GNRL-BG-COLOR);
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  top: 0;
+}
+
+/* Nav up */
+nav .upper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.property {
+  display: flex;
+  flex-direction: row;
+  padding-top: 1rem;
+}
+
+/* Rock Drop-Down */
+.rockdrop {
+  position:absolute;
+  top: 81px;
+  display: flex;
+  display: none;
+  flex-direction: row;
+  width: 100vw;
+  height: auto;
+  border-top: red solid 3px;
+  padding: 1em;
+  background-color: var(--GNRL-BG-COLOR);
+}
+
+.rockdrop li:hover {
+  transform: translateX(0.7rem);
+  background:  rgb(255, 247, 247);
+  border-radius: 10px;
+}
+
+.sepR{
+  border-left: solid rgb(236, 227, 227) 0.7px;
+  padding: 1em;
+  margin: 15px
+}
+
+/* Subsurface Drop-Down */
+.subsurfacedrop {
+  position:absolute;
+  top: 81px;
+  display: flex;
+  display: none;
+  flex-direction: row;
+  width: 100vw;
+  height: auto;
+  border-top: red solid 3px;
+  padding: 1em;
+  background-color: var(--GNRL-BG-COLOR);
+} 
+
+.subsurfacedrop li:hover {
+  transform: translateX(0.7rem);
+  background:  rgb(255, 247, 247);
+  border-radius: 10px;
+}
+
+.subsurface {
+  border-left: solid rgb(236, 227, 227) 0.7px;
+  padding: 1em;
+  margin: 15px
+}
+
+/* Catalyst Drop-Down */
+.catalystdrop {
+  position:absolute;
+  top: 81px;
+  display: flex;
+  display: none;
+  flex-direction: row;
+  width: 100vw;
+  height: auto;
+  border-top: red solid 3px;
+  padding: 1em;
+  background-color: var(--GNRL-BG-COLOR);
+} 
+
+.catalystdrop li:hover {
+  transform: translateX(0.7rem);
+  background:  rgb(255, 247, 247);
+  border-radius: 10px;
+}
+
+.sepC {
+  border-left: solid rgb(236, 227, 227) 0.7px;
+  padding: 1em;
+  margin: 15px
+}
+
+/* Vacuum Drop-Down */
+.vacuumdrop {
+  position:absolute;
+  top: 81px;
+  display: flex;
+  display: none;
+  flex-direction: row;
+  width: 100vw;
+  height: auto;
+  border-top: red solid 3px;
+  padding: 1em;
+  background-color: var(--GNRL-BG-COLOR);
+} 
+
+.vacuumdrop li:hover {
+  transform: translateX(0.7rem);
+  background:  rgb(255, 247, 247);
+  border-radius: 10px;
+}
+
+.sepV {
+  border-left: solid rgb(236, 227, 227) 0.7px;
+  padding: 1em;
+  margin: 15px
+}
+
+.contact {
+  display: flex;
+  padding: 1rem;
+}
+
+/* Nav Green */
+nav .green {
+  background-color: var(--NAV-BG-COLOR);
+  color: var(--COLOR);
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  height: 48px;
+  width: 100vw;
+}
+
+.navright {
+  display: flex;
+}
+
+/* || MAIN */
+main {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+}
+
+/* mainleft */
+.mainleft {
+  background-color: var(--SCTN-BG-COLOR);
+  color: var(--COLOR);
+  text-align: left;
+  min-width: 28vw;
+  height: auto;
+}
+
+.mainleft li:hover {
+  display:block;
+  color: var(--SCTN-BG-COLOR);
+  background-color: var(--GNRL-BG-COLOR);
+   transform: translatex(2%);
+  transition: all 0.5s;
+}
+
+/* Phase Drop */
+
+.phasedrop {
+  position:absolute;
+  display: none;
+  background-color: var(--GNRL-BG-COLOR);
+  color: var(--SCTN-BG-COLOR);
+  min-width: 23vw;
+}
+
+.phase:hover .phasedrop {
+  transform: translateX(100%);
+  max-width: 25vw;
+}
+
+/* Simulation Drop */
+.simulationdrop {
+  position:absolute;
+  display: none;
+  background-color: var(--GNRL-BG-COLOR);
+  color: var(--SCTN-BG-COLOR);
+  min-width: 23vw;
+}
+
+.simulation:hover .simulationdrop {
+  transform: translateX(100%);
+  max-width: 25vw;
+}
+
+/* Recomb Drop */
+.recombdrop {
+  position:absolute;
+  display: none;
+  background-color: var(--GNRL-BG-COLOR);
+  color: var(--SCTN-BG-COLOR);
+  min-width: 23vw;
+}
+
+.recomb:hover .recombdrop {
+  transform: translateX(100%);
+  max-width: 25vw;
+}
+
+/* Density Drop */
+.densitydrop {
+  position:absolute;
+  display: none;
+  background-color: var(--GNRL-BG-COLOR);
+  color: var(--SCTN-BG-COLOR);
+  min-width: 23vw;
+}
+
+.density:hover .densitydrop {
+  transform: translateX(100%);
+  max-width: 25vw;
+}
+
+/* Viscosity Drop */
+.viscositydrop {
+  position:absolute;
+  display: none;
+  background-color: var(--GNRL-BG-COLOR);
+  color: var(--SCTN-BG-COLOR);
+  min-width: 23vw;
+}
+
+.viscosity:hover .viscositydrop {
+  transform: translateX(100%);
+  max-width: 25vw;
+}
+
+/* Comp Drop */
+.compdrop {
+  position:absolute;
+  display: none;
+  background-color: var(--GNRL-BG-COLOR);
+  color: var(--SCTN-BG-COLOR);
+  min-width: 23vw;
+}
+
+.comp:hover .compdrop {
+  transform: translateX(100%);
+  max-width: 25vw;
+}
+
+/* Access Drop */
+.accessdrop {
+  position:absolute;
+  display: none;
+  background-color: var(--GNRL-BG-COLOR);
+  color: var(--SCTN-BG-COLOR);
+  min-width: 23vw;
+}
+
+.access:hover .accessdrop {
+  transform: translateX(100%);
+  max-width: 25vw;
+}
+
+/* Train Drop */
+.traindrop {
+  position:absolute;
+  display: none;
+  background-color: var(--GNRL-BG-COLOR);
+  color: var(--SCTN-BG-COLOR);
+  min-width: 23vw;
+}
+
+.train:hover .traindrop {
+  transform: translateX(100%);
+  max-width: 25vw;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+ul li:first-child {
+    margin-top: 15px;
+}
+
+/* maincenter */
+.maincenter {
+  background-color: var(--CNT-COLOR);
+  display: flex;
+  flex-direction: column;
+  min-width: 23vw;
+  height: auto;
+}
+
+.whtcenter {
+  background-color: var(--COLOR);
+  position: relative;
+  top: 70px;
+  margin-top: 100px;
+}
+
+/* mainright */
+.mainright {
+  min-width: 46vw;
+  height: auto;
+  padding: 2rem;
+  color: var(--SCTN-BG-COLOR)
+}
+
+.big {
+    font-size: 2rem;
+}
+
+ /* || FOOTER */
+ .footer {
+    background-color: var(--SCTN-BG-COLOR);
+    height: 250px;
+    width: 100vw;
+    border-top: red solid 5px;
+    color: var(--COLOR);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+ }
+
+ footer img {
+  margin-top: 30px;
+ }
+
+ /* footer center */
+ .ftrcenter {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+ }
+ 
+ /* footer right */
+ .ftrright {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+ }
+
+ /* footer lower */
+ .ftrlower {
+  background-color: #333;
+  color: var(--COLOR);
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100vw;
+  height: 30px;
+  padding-left: 7em;
+  padding-right: 7em;
+  padding-bottom: 1em;
+ }
+
+ /* || SCREEN RE-SIZE */
+ @media screen and ( min-width: 1000px) {
+   
+ }
