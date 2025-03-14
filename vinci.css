@@ -400,8 +400,3 @@ ul li:first-child {
   padding-right: 7em;
   padding-bottom: 1em;
  }
-
- /* || SCREEN RE-SIZE */
- @media screen and ( min-width: 1000px) {
-   
- }
